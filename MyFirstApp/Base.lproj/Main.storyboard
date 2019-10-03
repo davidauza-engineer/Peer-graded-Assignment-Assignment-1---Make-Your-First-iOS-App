@@ -18,6 +18,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxp-9c-BtY">
                                 <rect key="frame" x="169.5" y="433" width="75" height="30"/>
                                 <state key="normal" title="Click Here!"/>
+                                <connections>
+                                    <action selector="updateUI:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pHZ-xW-azg"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, Everybody!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ctg-uR-hCt">
                                 <rect key="frame" x="140" y="344" width="134" height="21"/>
@@ -35,6 +38,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="Nxp-9c-BtY" id="qvM-TE-y3W"/>
+                        <outlet property="label" destination="Ctg-uR-hCt" id="73D-93-UsD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
